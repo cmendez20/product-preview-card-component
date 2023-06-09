@@ -85,8 +85,8 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--white);
-  max-width: 320px;
-  border-radius: 8px;
+  max-width: 20rem;
+  border-radius: 10px;
   margin-bottom: var(--48px);
 }
 
@@ -95,8 +95,8 @@ p {
 }
 
 .card-image {
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .card-category {
