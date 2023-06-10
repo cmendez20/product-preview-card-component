@@ -90,8 +90,27 @@ p {
   margin-bottom: var(--48px);
 }
 
+@media screen and (min-width: 56.25rem) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 37.5rem;
+  }
+}
+
 .card-info {
-  padding: 23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 1.4375rem;
+  padding-bottom: 1.4375rem;
+}
+
+@media screen and (min-width: 56.25rem) {
+  .card-info {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
 }
 
 .card-image {
@@ -100,12 +119,26 @@ p {
   border-top-left-radius: 10px;
 }
 
+@media screen and (min-width: 56.25rem) {
+  .card-image {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .card-category {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 6px;
   font-size: var(--12px);
   margin-bottom: var(--10px);
+}
+
+@media screen and (min-width: 56.25rem) {
+  .card-category {
+    margin-bottom: var(--18px);
+  }
 }
 
 .card-title {
@@ -117,15 +150,34 @@ p {
   margin-bottom: var(--18px);
 }
 
+@media screen and (min-width: 56.25rem) {
+  .card-title {
+    font-size: var(--32px);
+    margin-bottom: var(--24px);
+  }
+}
+
 .card-description {
   line-height: 1.5;
   margin-bottom: var(--24px);
+}
+
+@media screen and (min-width: 56.25rem) {
+  .card-description {
+    line-height: 1.7;
+  }
 }
 
 .card-payment {
   display: flex;
   align-items: center;
   margin-bottom: var(--16px);
+}
+
+@media screen and (min-width: 56.25rem) {
+  .card-payment {
+    margin-bottom: var(--24px);
+  }
 }
 
 .card-price {
@@ -137,6 +189,8 @@ p {
 
 .card-sale {
   text-decoration: line-through;
+  font-weight: 500;
+  color: var(--secondary-text-color);
 }
 
 .card-button {
@@ -148,7 +202,6 @@ p {
   margin: auto;
   color: var(--white);
   font-family: var(--sans-serif-font);
-  font-weight: 700;
   font-size: var(--14px);
   border: none;
   border-radius: 6px;
