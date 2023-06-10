@@ -38,7 +38,6 @@ body {
 }
 
 html {
-  --6px: 0.375rem;
   --10px: 0.625rem;
   --12px: 0.75rem;
   --14px: 0.875rem;
@@ -46,6 +45,7 @@ html {
   --18px: 1.125rem;
   --24px: 1.5rem;
   --30px: 1.875rem;
+  --32px: 2rem;
   --48px: 3rem;
 }
 
@@ -91,10 +91,11 @@ p {
 }
 
 .card-info {
-  padding: 24px;
+  padding: 23px;
 }
 
 .card-image {
+  margin: auto;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -130,7 +131,7 @@ p {
 .card-price {
   font-family: var(--serif-font);
   color: var(--main-primary-color);
-  font-size: var(--30px);
+  font-size: var(--32px);
   margin-right: var(--18px);
 }
 
@@ -139,14 +140,24 @@ p {
 }
 
 .card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   background-color: var(--main-primary-color);
+  margin: auto;
   color: var(--white);
   font-family: var(--sans-serif-font);
   font-weight: 700;
-  font-size: var(--12px);
+  font-size: var(--14px);
   border: none;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 15px 0;
+}
+
+.icon-cart {
+  margin-right: 10px;
+  min-width: var(--14px);
 }
 
 /* FOOTER */
